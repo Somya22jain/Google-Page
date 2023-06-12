@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+        }
+        .menuitem{
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+             margin: none;
+             padding: none;
+             position: relative;
+             top: -14px;
+             margin-right: 8px;
+        }
+        .menuitem:hover{
+            text-decoration: underline;
+        }
+        .icon{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: -6px;
+            margin-right: 8px;
+        }
+         #image{
+            width: 40x;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 8px;
+         }
+         nav{
+            text-align: right;
+         }
+         section{
+            text-align: center;
+         }
+         #google{
+            width: 600px;
+            height: 280px;
+            margin-top: 100px;
+         }
+         #box{
+            width: 500px;
+            border: 1px solid black;
+            font-size: 14px;
+            padding: 14px;
+            border-radius: 24px;
+            margin-top: -90px;
+            outline: none;
+         }
+         #box:hover{
+            box-shadow: 0 1px 6px 0 black;
+            border-color: black;
+         }
+         #box:focus{
+            box-shadow: 0 1px 6px 0 black;
+            border-color: black;
+         }
+         #div{
+            position: relative;
+            margin-top: -40px;
+
+         }
+       
+         #div >img{
+            position: absolute;
+            top: -4px;
+            right: 0;
+            width: 28px;
+         }
+         .mic{
+            width: 36px;
+            height: 36px;
+            margin-right: 480px;
+            
+         }
+         .button{
+            margin-top: 12px;
+            margin-right: 6px;
+            
+         }
+         #app-drop-down{
+            width: 285px;
+            padding: 28px;
+            border: 1px solid lightpink;
+            box-shadow: 0 2px 10px black;
+         }
+         .app-icon{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+         }
+         .apps{
+            display: inline-block;
+            width: 84px;
+            padding: 8px 2px;
+            text-align: center;
+            
+         }
+         .apps:hover{
+            border: 1px solid black;
+            border-radius: 4px;
+         }
+         
+         
+         #app-drop-down{
+            position: absolute;
+            right: 100px;
+
+            
+         }
+         .icon:hover
+         #app-drop-down{
+            display: block;
+         }
+         
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="menuitem" href=""> Gmail</a>
+            <a class="menuitem" href="">Images</a>
+            
+                <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAAD8/Pz4+Pj19fUmJiZLS0vX19daWloEBATr6+vd3d3FxcWMjIxpaWkyMjLLy8uhoaGnp6fj4+NRUVENDQ1EREStra3R0dG5ubmGhoYTExNjY2NKSkq/v78fHx90dHSYmJh9fX0gICBycnIYGBgTrFONAAAEN0lEQVR4nO3d2ZaiMBAG4CSALMomCu629vj+rzjQo6NC2lMFkzlt+L8LT99UJyFhCadChAAAAAAAAAAAAAAAAAAAAAAAgP7U4Nh+/2FI7P+iNH8N+S+GuNXHYrLYxX6PsqJTUscmp4gbWJfkx7s69lflcmOZnNyTV3tuPd1zeA0Nz9zYaHIr1ssdZizLNJAPKlYnztKH0HTGCVXVY7HBlFdpjulehrd+kKFcMg6nOqTyb2j9V3qgHx4nX95j6wrsjTXRCR4q2VTTW5Nj/VI+K31y7NprlRuYGahK5E8FfQ2YghjsnGXbmVrNImhFhjI3c0V1vU4Lyaei32mglMROfD4Jr4PHxBVViU5JtSSiNFGJTefghHJD6ggVJZpyKyOd+KEpySOe9KmmhSktdOppyv3o24iXFpqS5IoUqnShktYNK13oYkhDvjXRFZWRQl1tC2knU6YLnQxpyLe0fUhroaNtIe1iqm2hmT7caUpaEi+IW03slhbqLzWxu/7N+JYScaecUJakG6ISgeZKE9Cuh0XZvUnJ2Mi1VHdPi0nnkv5OU9GKdbtHlnwv5Zp0DuaF+gAdtZ8W6rs2dX4xu3S638yFpq6mbDfxRB4rh043HKih6tRuoGRPMIkliap10ifUx1LNWKON7y9F66lmaeaJpqHu89+mMxPOLCbabG9DoP7dbjjdME3kw/DxcoMvMpz1/Tn/cqL3YCOa3ydQ5Zw3zorT/VwM1kYn+aKokqYfwzKecY+k8vNFU9HtIvfZsbO4bE4RL6l4x7UHFU1XWeYXfeYvqqhjV37RZ5S5hZ9lqylpLjPQj34TCAAAAAAAAAAAAAAAAAAAMDJjWPek3P4ZLcrtX0dnQCyjFH/TrH1ZBhU/t8zNkmMde9xl/FSVqAqaHNV045vNF1L+fd2Ed+DV08nu+VRBxqune7ins5/Z6UYch1Je1wU1PzGnG925d41tfrw55/BE8S2vrYktyVmNfE+Ls+qyGOl3zvzzad3TcU7vxWjznPbJWxbGEbVXTWzn5AGTtVdNeLQc+JqaP2eJhzI1k1+qxLmT50tenuW2E71DGVDHqd9O9A7l2cxdI+omlEtqqqduSQGxE1XeDQ1NdKISp25BckHKM1Rip8nVT4i5+gtNrv7JSCfqVlhdiGnCR00Lj7TQaTuRvZH0b8YLWPf0wjuve7KqD20/D8dwLbX9fjiGZxrh/pjnUmMfx/iHc4vPHzm3GMH8cARz/MHvaT7lD39P84fd79rG8b4UAAAAAAAAAAAAAAAAAADgXVj//VLrv0Fr+3eErf8WtO3f8x7BN9mt/66+2Nu+N0L//S3EW+xvMYY9SmzfZ2YMewVh3dMLb7LuyfZ918awd57t+x+OYQ9L6/chFSPYS3YE+wE/7ek8sXJPZ2H/vtyDvMne6lj3BAAAAAAAAAAAAAAAAAAAAADwxn4Dbnw/Rk+NYuAAAAAASUVORK5CYII=" alt="icon">
+            <div id="app-drop-down"> 
+                <div class="apps">
+                    <img class="app-icon" src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" alt="google">
+                    <p> Search</p>
+                </div>
+                <div class="apps">
+                    <img class="app-icon" src="https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA" alt="google">
+                    <p> Maps </p>
+                </div>
+                <div class="apps">
+                    <img class="app-icon" src="https://play-lh.googleusercontent.com/t-juVwXA8lDAk8uQ2L6d6K83jpgQoqmK1icB_l9yvhIAQ2QT_1XbRwg5IpY08906qEw" alt="google">
+                    <p> Drive </p>
+                </div>
+                <div class="apps">
+                    <img class="app-icon" src="https://play-lh.googleusercontent.com/Jsbb0EeesKUbDTl3UyDKO6sNz45RCMh7gnoI6giQcQz1f5Mj0J4TRh7Psyu53vShh-qm" alt="google">
+                    <p> Calender </p>
+                </div>
+                <div class="apps">
+                    <img class="app-icon" src="https://play-lh.googleusercontent.com/ZyWNGIfzUyoajtFcD7NhMksHEZh37f-MkHVGr5Yfefa-IX7yj9SMfI82Z7a2wpdKCA" alt="google">
+                    <p> Photos </p>
+                </div>
+                <div class="apps">
+                    <img class="app-icon" src="https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI" alt="google">
+                    <p> G-mail </p>
+                </div>
+            </div>
+            
+            
+             <img id="image" src="Ruchi.jpg" alt="me">
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img id="google" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="google">
+        <br>
+        <div id="div"> <input id="box" />
+            <img class="mic" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" alt="mic">
+            </div>
+            <button class="button"> Google Search </button>
+            <button class="button"> I'm Feeling lucky </button>
+
+        </section>
+    </main>
+</body>
+</html>
